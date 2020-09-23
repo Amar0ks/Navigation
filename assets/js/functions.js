@@ -1,3 +1,3 @@
-export function thanks() {
+function thanks() {
   alert("Thanks");
 }

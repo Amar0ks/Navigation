@@ -14,10 +14,10 @@ function loadPage(html, div) {
 
 loadPage("./assets/html/Hello.html", "content");
 
-Hello.addEventListener("click", function () {
-  loadPage("./assets/html/Hello.html", "content");
-});
-
-Info.addEventListener("click", function () {
-  loadPage("./assets/html/Info.html", "content");
+document.addEventListener("click", function (e) {
+  if (e.target && e.target.id == "Hello") {
+    loadPage("./assets/html/Hello.html", "content");
+  } else if (e.target && e.target.id == "Info") {
+    loadPage("./assets/html/Info.html", "content");
+  }
 });

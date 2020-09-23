@@ -18,11 +18,12 @@
   Other Function I Want to use
 </button>
 
-<script type="module" src="../js/functions.js">
-  // function thanks() {
-  //     alert("Thanks");
-  //   }
-    Say.addEventListener("click", function () {
+<script type="module">
+  let script = document.createElement("script");
+  script.src = "./assets/js/functions.js";
+  document.head.append(script);
+
+  Say.addEventListener("click", function () {
     thanks();
-    });
+  });
 </script>
