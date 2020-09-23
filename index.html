@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navigation</title>
+    <!--Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!--Bootstrap-->
+  </head>
+
+  <body>
+    We are using Node.js <span id="node-version"></span>, Chromium
+    <span id="chrome-version"></span>, and Electron
+    <span id="electron-version"></span><br /><br />
+    <button type="submit" class="btn btn-success btn-lg mt-2" id="Hello">
+      Hello Page
+    </button>
+    <button type="submit" class="btn btn-success btn-lg mt-2" id="Info">
+      Info Page
+    </button>
+    <br /><br />
+    <hr />
+    Content:
+    <div id="content" class=""></div>
+    <script type="module" src="./assets/js/winController.js"></script>
+  </body>
+</html>

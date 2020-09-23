@@ -1,0 +1,28 @@
+<h1>Hello Page</h1>
+<br /><br />
+<button type="submit" class="btn btn-success btn-lg mt-2" id="Info">
+  Jump to info
+</button>
+
+<!-- <script type="module" src="./assets/js/winController.js"></script> -->
+<!-- <script>  require("./assets/js/winController.js");</script> -->
+<!-- <script>
+  let script = document.createElement("script");
+  script.src = "./assets/js/winController.js";
+  document.head.append(script);
+</script> -->
+
+<!-- Other function I may want to include: -->
+
+<button type="submit" class="btn btn-success btn-lg mt-2" id="Say">
+  Other Function I Want to use
+</button>
+
+<script type="module" src="../js/functions.js">
+  // function thanks() {
+  //     alert("Thanks");
+  //   }
+    Say.addEventListener("click", function () {
+    thanks();
+    });
+</script>
